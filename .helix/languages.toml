@@ -1,0 +1,4 @@
+# Let clangd ask arm-none-eabi-gcc for its builtin include paths (newlib headers etc.)
+[language-server.clangd]
+command = "clangd"
+args = ["--query-driver=/usr/bin/arm-none-eabi-*", "--background-index", "--clang-tidy=false"]
